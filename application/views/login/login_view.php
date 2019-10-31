@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 	<title>Login PPOB</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="<?=base_url()?>assets/loginass/images/icons/favicon.ico"/>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="<?=base_url()?>assets/loginass/images/icons/favicon.ico" />
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="<?=base_url()?>assets/loginass/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="<?=base_url()?>assets/loginass/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="<?=base_url()?>assets/loginass/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="<?=base_url()?>assets/loginass/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="<?=base_url()?>assets/loginass/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/loginass/css/main.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 </head>
+
 <body>
-<?php
+	<?php
   $notif = $this->session->flashdata('notif');
   if ($notif != NULL) {
     echo '
@@ -40,12 +47,13 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
-				<form action="<?php echo base_url() ?>index.php/login/proses" class="login100-form validate-form" method="post">
+				<form action="<?php echo base_url() ?>index.php/login/proses" class="login100-form validate-form"
+					method="post">
 					<span class="login100-form-title p-b-33">
 						Login PPOB
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Username Not valid">
+					<div class="wrap-input100 validate-input" data-validate="Username Not valid">
 						<input class="input100" type="text" id="username" name="username" placeholder="Username">
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
@@ -89,22 +97,23 @@
 
 
 
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?=base_url()?>assets/loginass/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?=base_url()?>assets/loginass/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?=base_url()?>assets/loginass/vendor/bootstrap/js/popper.js"></script>
 	<script src="<?=base_url()?>assets/loginass/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?=base_url()?>assets/loginass/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?=base_url()?>assets/loginass/vendor/daterangepicker/moment.min.js"></script>
 	<script src="<?=base_url()?>assets/loginass/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?=base_url()?>assets/loginass/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="<?=base_url()?>assets/loginass/js/main.js"></script>
 
 </body>
+
 </html>
